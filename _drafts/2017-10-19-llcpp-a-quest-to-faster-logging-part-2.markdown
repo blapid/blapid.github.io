@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "LLCPP - A quest to faster C++ logging (Part 2)"
 date:   2017-10-19 12:56:15 +0300
 categories: cpp
