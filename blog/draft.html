@@ -8,7 +8,7 @@ meta_robots:  noindex
 <p>These are draft posts for previewing.</p>
 
 <div class="posts">
-  {% assign sorted = (site.drafts | sort: 'date') | reverse %}
+  {% assign sorted = site.drafts | sort: 'date' | reverse %}
   {% for draft in sorted %}
     <div class="post py2">
       <p class="post-meta h5">{{ draft.date | date: site.date_format }}</p>
