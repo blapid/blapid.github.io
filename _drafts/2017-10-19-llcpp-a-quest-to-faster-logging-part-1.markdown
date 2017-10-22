@@ -1,10 +1,10 @@
 ---
-title:  "LLCPP - A quest to faster C++ logging (Part 1)"
-date:   2017-10-19 12:56:15 +0300
+title:  "llcpp - A quest to faster C++ logging (Part 1 - Current Options)"
+date:   2017-10-22 12:56:15 +0300
 categories: cpp
 ---
 
-_This is the first part of the series of post on LLCPP, to put things in perspective, make sure you read the [intro post]._
+_This is the first part of the series of post on llcpp, to put things in perspective, make sure you read the [intro post]._
 
 # Logging, what is it good for? Absolutely...
 Nothing? Nah, it's really useful, right? Chances are you started logging when you wrote one of your first computer programs and it failed miserably. You've worked on that piece of code for a while, going line by line to make sure they make sense. Heck, you might've (unknowingly) had your first [duck debug][duck-debug] moments trying to fix it. And then you had an epiphany: "lets use that Hello World! thing to see whats going on!". I vaguely remember mine, and it probably looked something like this:
@@ -56,21 +56,8 @@ After going through the code of the candidates I've mentioned above, I'd like to
 - *I/O*: Sending the serialized string to some output: stdout, file, network, etc.
 - *Other stuff*: Some frameworks implement some auxiliary features like: file rotation, conditional logging, crash handlers and others. I put these in their own category because, In my opinion, they're "nice-to-have" features and not part of the essentials of a logging framework.
 
-#### API
-This part usually holds the obvious debug/info/warn/... functions, some helper macros, `operator<<` implementation and initialization functions. To me, it was kind of interesting to see that none of the non-chevron approaches tried to verify the function-arguments based on the format string. More on my attempt at this later on. Some frameworks add extra information on top of the format you provide in your call. For example: File path and line of the log call, date and time of the log call and more.
-
-#### Serializing the information
-Most approaches seemed to realize that this part can cause a performance hit and therefore either implement/borrow a quick formatting implementation. Some frameworks even try to delay the formatting to the worker thread; this usually requires some extra argument serialization along the way and has some quirks with parameters passed by reference or pointer (i.e. strings).
-
-#### Async support
-In order to make the log calls asynchronous, the frameworks pass the serialized log messages to a worker thread that handles the rest of the serialization and writes the string to a selected I/O method. The candidates use different methods of dispatching the logs: some use lock-free queues and some use queues that may block, some may drop log messages when the load is high and some guarantee that all messages will be written. A pretty good discussion (with some benchmark spoilers) can be found [here][g3log-vs-spdlog] and [here][g3log-vs-spdlog-cont] with inputs from the authors of our candidates.
-
-#### I/O
-Some candidates allow you to initialize them with various of I/O "sinks" which allow you to write your log to different receivers (i.e. file system, syslog, android's logcat, etc.) while others only let you specify a filename to write to. Other than that, the worker thread pretty much passes the data directly to a libc/libc++ library call - usually `std::ofstream`. I was kind of surprised that none of them implemented some kind of `select(2)` code to handle multiple sinks.
-
-
 # A different approach...
-While going over the repositories of the different frameworks, I've had a strange itch in the back of my head. It took me a couple of days, but then I realized: they're all conforming to a constraint that is taken for granted. Which constraint, you ask? The one that dictates that the output log file must be human-readable. What happens when we ignore this constraint? That will be the subject of the next post.
+While going over the repositories of the different frameworks, I've had a strange itch in the back of my head. It took me a couple of days, but then I realized: they're all conforming to a constraint that is taken for granted. Which constraint, you ask? The one that dictates that the output log file must be human-readable. What happens when we relax this constraint? That will be the subject of the next post.
 
 You can read it here: [Part 2][part2].
 
