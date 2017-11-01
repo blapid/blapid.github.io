@@ -1,5 +1,5 @@
 ---
-title:  "llcpp - A quest to faster C++ logging (Intro)"
+title:  "llcpp - A quest for faster C++ logging (Intro)"
 date:   2017-10-31 12:56:15 +0300
 categories: cpp
 comments: true
@@ -28,7 +28,7 @@ _(Prefer reading code? [Go ahead][llcpp-gh]!)_
 [kjellkods-async-loggers]: https://kjellkod.wordpress.com/2011/11/17/kjellkods-g2log-vs-googles-glog-are-asynchronous-loggers-taking-over/
 [g3log-vs-spdlog]: https://kjellkod.wordpress.com/2015/06/30/the-worlds-fastest-logger-vs-g3log/
 [g3log-vs-spdlog-cont]:https://github.com/gabime/spdlog/issues/293
-[part1]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-1 %}
-[part2]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-2 %}
-[part3]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-3 %}
-[part4]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-4 %}
+[part1]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-1 %}
+[part2]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-2 %}
+[part3]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-3 %}
+[part4]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-4 %}

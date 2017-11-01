@@ -1,5 +1,5 @@
 ---
-title:  "llcpp - A quest to faster C++ logging (Part 2 - llcpp)"
+title:  "llcpp - A quest for faster C++ logging (Part 2 - llcpp)"
 date:   2017-10-31 12:56:15 +0300
 categories: cpp
 comments: true
@@ -253,8 +253,8 @@ The next post is about benchmarking. I'll cover a couple of important points reg
 [^1]: *Afternote*: After finishing the majority of the work on `llcpp` and these posts, I've found [this][udl-paper]. This is a proposal to add the GNU extension to the C++ standard, which seems to be abandoned. Continuing down the rabbbit-hole I got to [this thread](https://groups.google.com/a/isocpp.org/forum/#!topic/std-proposals/YtIPoZ4ESMI) which was an interesting read - especially Louis Dionne's last two comments, which unfortunately seem to be unanswered. Luois then posted [this](https://groups.google.com/a/isocpp.org/forum/#!topic/std-proposals/b1X597zMx9s), hopefully this will make it to the C++20 standard!
 
 [udl-paper]: http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3599.html
-[intro]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-intro %}
+[intro]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-intro %}
 [llcpp-gh]: https://github.com/blapid/llcpp
-[part3]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-3 %}
+[part3]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-3 %}
 [parsing-compile-time]: https://akrzemi1.wordpress.com/2011/05/11/parsing-strings-at-compile-time-part-i/
 [user-defined-string-literals]: http://en.cppreference.com/w/cpp/language/user_literal

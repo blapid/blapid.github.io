@@ -1,5 +1,5 @@
 ---
-title:  "llcpp - A quest to faster C++ logging (Part 3 - Benchmarks)"
+title:  "llcpp - A quest for faster C++ logging (Part 3 - Benchmarks)"
 date:   2017-10-31 12:56:15 +0300
 categories: cpp
 comments: true
@@ -106,5 +106,5 @@ You can read it here: [Part 4][part4].
 
 [nano-bench]: https://github.com/Iyengar111/NanoLog/blob/master/nano_vs_spdlog_vs_g3log_vs_reckless.cpp
 [mal-gh]: https://github.com/RafaGago/mini-async-log
-[part4]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-4 %}
-[intro]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-intro %}
+[part4]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-4 %}
+[intro]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-intro %}

@@ -1,5 +1,5 @@
 ---
-title:  "llcpp - A quest to faster C++ logging (Part 4 - Afterword)"
+title:  "llcpp - A quest for faster C++ logging (Part 4 - Afterword)"
 date:   2017-10-31 12:56:15 +0300
 categories: cpp
 comments: true
@@ -31,7 +31,7 @@ Here's a quick list of areas that still need work:
 # Fin
 Thanks for reading! I'd love to hear your feedback :)
 
-[intro]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-intro %}
+[intro]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-intro %}
 [meta-cppcon]: https://www.youtube.com/watch?v=4AfRAVcThyA
 [fmt-syntax]: http://fmtlib.net/4.0.0/syntax.html#formatspec
 [celero-yt]: https://www.youtube.com/watch?v=dO-j3qp7DWw

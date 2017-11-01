@@ -1,5 +1,5 @@
 ---
-title:  "llcpp - A quest to faster C++ logging (Part 1 - Current Options)"
+title:  "llcpp - A quest for faster C++ logging (Part 1 - Current Options)"
 date:   2017-10-31 12:56:15 +0300
 categories: cpp
 comments: true
@@ -62,8 +62,8 @@ While going over the repositories of the different frameworks, I've had a strang
 
 You can read it here: [Part 2][part2].
 
-[intro]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-intro %}
-[part2]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-2 %}
+[intro]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-intro %}
+[part2]: {% post_url 2017-10-31-llcpp-a-quest-for-faster-logging-part-2 %}
 
 [g3log-github]: https://github.com/KjellKod/g3log
 [NanoLog-github]: https://github.com/Iyengar111/NanoLog
