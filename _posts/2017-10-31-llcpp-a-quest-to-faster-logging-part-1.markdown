@@ -1,10 +1,11 @@
 ---
 title:  "llcpp - A quest to faster C++ logging (Part 1 - Current Options)"
-date:   2017-10-22 12:56:15 +0300
+date:   2017-10-31 12:56:15 +0300
 categories: cpp
+comments: true
 ---
 
-_This is the first part of the series of post on llcpp, to put things in perspective, make sure you read the [intro post]._
+_This is the first part of the series of post on llcpp, to put things in perspective, make sure you read the [intro post][intro]._
 
 # Logging, what is it good for? Absolutely...
 Nothing? Nah, it's really useful, right? Chances are you started logging when you wrote one of your first computer programs and it failed miserably. You've worked on that piece of code for a while, going line by line to make sure they make sense. Heck, you might've (unknowingly) had your first [duck debug][duck-debug] moments trying to fix it. And then you had an epiphany: "lets use that Hello World! thing to see whats going on!". I vaguely remember mine, and it probably looked something like this:
@@ -60,6 +61,9 @@ After going through the code of the candidates I've mentioned above, I'd like to
 While going over the repositories of the different frameworks, I've had a strange itch in the back of my head. It took me a couple of days, but then I realized: they're all conforming to a constraint that is taken for granted. Which constraint, you ask? The one that dictates that the output log file must be human-readable. What happens when we relax this constraint? That will be the subject of the next post.
 
 You can read it here: [Part 2][part2].
+
+[intro]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-intro %}
+[part2]: {% post_url 2017-10-31-llcpp-a-quest-to-faster-logging-part-2 %}
 
 [g3log-github]: https://github.com/KjellKod/g3log
 [NanoLog-github]: https://github.com/Iyengar111/NanoLog

@@ -25,14 +25,22 @@ github_username:  blapid
 collections:
   drafts:
     output: true
+  posts:
+    output: true
 
 defaults:
   -
     scope:
-      path: ""
+      path: "_drafts"
       type: drafts
     values:
       layout: draft
+  -
+    scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
 
 disqus:
     shortname: blapid
